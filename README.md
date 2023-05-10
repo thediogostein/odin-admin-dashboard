@@ -1,2 +1,6 @@
 # odin-admin-dashboard
-Admin Dashboard for the Intermediate HTML and CSS Course - The Odin Project
+
+Project Admin Dashboard - Intermediate HTML and CSS - The Odin Project
+
+You can check the requirements at:
+https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard
