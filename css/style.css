@@ -510,8 +510,8 @@ template {
 .main {
   padding: 1em 2em;
   display: grid;
-  gap: 32pxs;
-  grid-template-columns: 3fr 1fr;
+  gap: 32px;
+  grid-template-columns: 2fr 1fr;
 }
 .main__projects {
   /* display: grid;
@@ -547,4 +547,9 @@ template {
 
 .main__projectsCardIcons {
   text-align: right;
+}
+/* --announcements */
+.main__announcementsCard {
+  background-color: white;
+  padding: 2em;
 }
