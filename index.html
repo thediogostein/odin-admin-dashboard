@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -14,7 +20,12 @@
   <body>
     <div class="wrapper">
       <div class="sidebar">
-        <div class="sidebar__logo">Dashboard</div>
+        <div class="sidebar__logo">
+          <span class="material-symbols-outlined sidebar__icon">
+            dashboard
+          </span>
+          <p>Dashboard</p>
+        </div>
         <nav class="sidebar__nav">
           <div class="sidebar__links1">
             <a href="#" class="sidebar__link">
@@ -61,126 +72,212 @@
 
       <div class="right_col">
         <header class="header">
-          <div class="header__row">
-            <div class="header__searchDiv">
-              <span class="material-symbols-outlined header__searchIcon">
-                search
-              </span>
-              <form action="" class="header__search">
-                <label for="search" class="visuallyhidden">Search:</label>
-                <input
-                  type="search"
-                  name=""
-                  id="search"
-                  placeholder="Search..."
-                  class="header__searchInput"
-                />
-              </form>
-            </div>
-
-            <div class="header__userDiv">
-              <span class="material-symbols-outlined">
-                notifications_active
-              </span>
-              <img
-                class="header__userPic"
-                src="imgs/Ikki_3_cloth.webp"
-                alt=""
+          <div class="header__searchDiv">
+            <span class="material-symbols-outlined header__searchIcon">
+              search
+            </span>
+            <form action="" class="header__search">
+              <label for="search" class="visuallyhidden">Search:</label>
+              <input
+                type="search"
+                name=""
+                id="search"
+                placeholder="Search..."
+                class="header__searchInput"
               />
-              <p class="header__userName">Diogo Stein</p>
+            </form>
+          </div>
+
+          <div class="header__userDiv">
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+            <img class="header__userPic" src="imgs/Ikki_3_cloth.webp" alt="" />
+            <p class="header__userName">Morgan Oakley</p>
+          </div>
+
+          <div class="header__helloDiv">
+            <img class="header__helloPic" src="imgs/Ikki_3_cloth.webp" alt="" />
+            <div class="header__helloText">
+              <p class="header__helloText1">Hi there,</p>
+              <p class="header__helloText2">Morgan Oakley(@morgan)</p>
             </div>
           </div>
 
-          <div class="header__row">
-            <div class="header__helloDiv">
-              <img
-                class="header__helloPic"
-                src="imgs/Ikki_3_cloth.webp"
-                alt=""
-              />
-              <div class="header__helloText">
-                <p class="header__helloText1">Hi there,</p>
-                <p class="header__helloText2">Morgan Oakley(@morgan)</p>
-              </div>
-            </div>
-
-            <div class="header__btnsDiv">
-              <button class="btn btn-primary">New</button>
-              <button class="btn btn-primary">Upload</button>
-              <button class="btn btn-primary">Share</button>
-            </div>
+          <div class="header__btnsDiv">
+            <button class="btn btn-primary">New</button>
+            <button class="btn btn-primary">Upload</button>
+            <button class="btn btn-primary">Share</button>
           </div>
         </header>
         <main class="main">
-          <div class="main__left">
-            <section class="projects">text</section>
-          </div>
-          <div class="main__right">
-            <section class="announcement">
-              <h2>Announcements</h2>
-              <div class="announcement__card">
-                <article class="announcement__content">
-                  <h3 class="announcement__title">Site Maintenance</h3>
-                  <p class="announcement__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Possimus aut consequatur odit temporibus repellendus.
-                  </p>
-                </article>
-                <article>
-                  <h3 class="announcement__title">Site Maintenance</h3>
-                  <p class="announcement__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Possimus aut consequatur odit temporibus repellendus.
-                  </p>
-                </article>
-                <article>
-                  <h3 class="announcement__title">Site Maintenance</h3>
-                  <p class="announcement__text">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Possimus aut consequatur odit temporibus repellendus.
-                  </p>
-                </article>
-              </div>
-            </section>
-            <section class="trending">
-              <h2>Trending</h2>
-              <div class="trending__card">
-                <article class="trending__user">
-                  <img
-                    class="trending__pic"
-                    src="imgs/Ikki_3_cloth.webp"
-                    alt=""
-                  />
-                  <div class="trending__content">
-                    <p class="trending__username">@tegan</p>
-                    <p class="trending__text">World Peace Builder</p>
-                  </div>
-                </article>
-                <article class="trending__user">
-                  <img
-                    class="trending__pic"
-                    src="imgs/Ikki_3_cloth.webp"
-                    alt=""
-                  />
-                  <div class="trending__content">
-                    <p class="trending__username">@tegan</p>
-                    <p class="trending__text">World Peace Builder</p>
-                  </div>
-                </article>
-                <article class="trending__user">
-                  <img
-                    class="trending__pic"
-                    src="imgs/Ikki_3_cloth.webp"
-                    alt=""
-                  />
-                  <div class="trending__content">
-                    <p class="trending__username">@tegan</p>
-                    <p class="trending__text">World Peace Builder</p>
-                  </div>
-                </article>
-              </div>
-            </section>
-          </div>
+          <section class="projects">
+            <h2 class="projects__headline">Your Projects</h2>
+            <div class="projects__cards">
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Laboriosam blanditiis aspernatur nobis consequuntur sunt
+                  libero reprehenderit inventore dicta? Soluta deleniti neque
+                  harum temporibus nulla accusantium voluptatem ut, ipsa
+                  molestiae perferendis.
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Voluptatum qui ipsa facilis. Quia mollitia in sunt? Sapiente
+                  maxime delectus quibusdam alias ut, consequatur repudiandae
+                  expedita nesciunt corrupti voluptatum rerum natus?
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                  architecto sed suscipit ipsum? Ratione voluptates earum quod
+                  ad laudantium quibusdam corrupti saepe voluptas, rerum dolores
+                  amet eligendi modi alias animi!
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Accusantium magnam delectus officiis voluptates quam?
+                  Excepturi harum sequi tempora perferendis quam hic explicabo
+                  eos ipsum quo quos, veritatis unde ab. Labore!
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Tempora corrupti minus esse sunt possimus, ipsum, dicta
+                  deserunt ipsam unde, libero eum quia aperiam nobis? Placeat
+                  est deserunt maiores exercitationem deleniti?
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+
+              <article class="projects__card">
+                <h3 class="projects__title">Super Cool Project</h3>
+                <p class="projects__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Corporis aliquid libero, cupiditate recusandae quisquam omnis
+                  amet repudiandae debitis officiis? Ab totam placeat
+                  exercitationem architecto explicabo a soluta odit at ex.
+                </p>
+                <div class="projects__icons">
+                  <span class="material-symbols-outlined"> bookmark_add </span>
+
+                  <span class="material-symbols-outlined"> visibility </span>
+                  <span class="material-symbols-outlined"> share </span>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <section class="announcement">
+            <h2 class="announcement__headline">Announcements</h2>
+            <div class="announcement__card">
+              <article class="announcement__content">
+                <h3 class="announcement__title">Site Maintenance</h3>
+                <p class="announcement__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus aut consequatur odit temporibus repellendus.
+                </p>
+              </article>
+              <hr />
+              <article class="announcement__content">
+                <h3 class="announcement__title">Site Maintenance</h3>
+                <p class="announcement__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus aut consequatur odit temporibus repellendus.
+                </p>
+              </article>
+              <hr />
+              <article class="announcement__content">
+                <h3 class="announcement__title">Site Maintenance</h3>
+                <p class="announcement__text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Possimus aut consequatur odit temporibus repellendus.
+                </p>
+              </article>
+            </div>
+          </section>
+          <section class="trending">
+            <h2 class="trending__headline">Trending</h2>
+            <div class="trending__card">
+              <article class="trending__user">
+                <img class="trending__pic" src="imgs/seya.jpg" alt="" />
+                <div class="trending__content">
+                  <p class="trending__username">@seya</p>
+                  <p class="trending__text">Cavaleiro de Pégasus</p>
+                </div>
+              </article>
+              <article class="trending__user">
+                <img
+                  class="trending__pic"
+                  src="imgs/Ikki_3_cloth.webp"
+                  alt=""
+                />
+                <div class="trending__content">
+                  <p class="trending__username">@ikki</p>
+                  <p class="trending__text">Cavaleiro de Fênix</p>
+                </div>
+              </article>
+              <article class="trending__user">
+                <img class="trending__pic" src="imgs/hioga.jpg" alt="" />
+                <div class="trending__content">
+                  <p class="trending__username">@hioga</p>
+                  <p class="trending__text">Cavaleiro de Cisne</p>
+                </div>
+              </article>
+              <article class="trending__user">
+                <img class="trending__pic" src="imgs/shiryu.webp" alt="" />
+                <div class="trending__content">
+                  <p class="trending__username">@shiryu</p>
+                  <p class="trending__text">Cavaleiro de Dragão</p>
+                </div>
+              </article>
+            </div>
+          </section>
         </main>
       </div>
     </div>
